@@ -33,7 +33,7 @@ fileUpload.addEventListener("change",()=>{
         console.log(imgType)
         console.log(`Extension is : ${img.type}`)
         if (imgName.endsWith("png")||imgName.endsWith("jpg")||imgName.endsWith("jpeg")){
-            if(img.size/1024<500){
+            if(img.size/1024<5000){
                 imgChange.src = imageURL;
                 imgChange.classList.remove("w-12","h-12","p-2");
                 imgChange.classList.add("w-22","h-22","p-0");

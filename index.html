@@ -20,9 +20,8 @@
   </style>
 </head>
   <body class="relative min-h-screen flex items-center justify-center text-white overflow-x-hidden">
-    
+    <main>
     <div class="absolute top-0 left-0 w-full h-full -z-10">
-      <!-- Pattern Circle -->
       <img src="assets/images/pattern-circle.svg" alt="pattern" class="absolute -mt-25 md:ml-0 -ml-20 pointer-events-none" />
 
       <picture>
@@ -72,8 +71,9 @@
     <img src="./assets/images/icon-info.svg" class="hidden" alt="icon-info.svg">
     <span class="text-red-500 text-sm spanInfo hidden">Max Size Of Photo Must Be less Than : 500KB.</span>
   </div>
+  <form class="mt-8 space-y-4" novalidate>
   <div class="fullName">
-    <label for="fulName" class="text-white md:mb-2 mt-2 mb-2 flex md:mt-2">Full Name</label>
+    <label for="fullName" class="text-white md:mb-2 mt-2 mb-2 flex md:mt-2">Full Name</label>
     <input type="text" id="fullName" name="fullName" class="inpFullName bg-white/5 md:w-[440px] w-[95%] h-[45px] rounded-xl p-2 px-3 border-2 border-gray-500 text-white text-[20px] focus:border-4 z-50 ">
       <div class="info flex gap-x-2 mt-2 spanerr3">
         <img src="./assets/images/icon-info.svg" class="hidden" alt="icon-info.svg">
@@ -97,8 +97,9 @@
         <span class="text-red-500 text-sm spanInfo hidden">Must Provide GitHub Username</span>
     </div>
   </div>
+  </form>
   <div class="button md:mt-5 mt-5">
-    <button class="md:w-[440px] w-[95%] h-[45px] rounded-xl cursor-pointer bg-[hsl(7,71%,60%)] font-extrabold focus:border-4 genButton">Generate My Ticket</button>
+    <button type="submit" class="md:w-[440px] w-[95%] h-[45px] rounded-xl cursor-pointer bg-[hsl(7,71%,60%)] font-extrabold focus:border-4 genButton">Generate My Ticket</button>
   </div>
 </div>
 </div>
@@ -139,6 +140,7 @@
       </div>
     </div>  
   </div>
+  </main>
   <script src="./script.js"></script>
 </body>
 
